@@ -99,7 +99,7 @@ public class MainActivity extends AppCompatActivity implements Callback<ConfigIt
                 .addConverterFactory(GsonConverterFactory.create(gson))
                 .build();
 
-        // prepare call in Retrofit 2.0
+
         GettingApi stackOverflowAPI = retrofit.create(GettingApi.class);
         Call<ConfigItems> call1 = stackOverflowAPI.loadRepos(search,"watchers","desc");
         call1.enqueue(this);
