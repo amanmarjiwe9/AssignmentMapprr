@@ -57,6 +57,7 @@ public class Details extends AppCompatActivity implements Callback<ConfigItems>,
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_details);
+        getSupportActionBar().setTitle("Contributors");
         name =(TextView)findViewById(R.id.detailsName);
         url =(TextView)findViewById(R.id.detailsurl);
         url.setOnClickListener(this);
